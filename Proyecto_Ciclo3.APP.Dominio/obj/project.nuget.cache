@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qgrr9Zwc7NDdAlVSvuG5z1CBExolnWGXt7hWBmWollRD3GuQAwq4snlP3djLBBNF+XslKT+N5BLh8y9e5TYhbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.App.Dominio\\Proyecto_Ciclo3.APP.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Catalina Castro\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Catalina Castro\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

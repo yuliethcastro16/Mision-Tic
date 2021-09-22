@@ -1,0 +1,12 @@
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\obj\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.csprojAssemblyReference.cache
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\obj\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.AssemblyInfoInputs.cache
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\obj\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.AssemblyInfo.cs
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\obj\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\bin\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.deps.json
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\bin\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.dll
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\bin\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.pdb
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\bin\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Dominio.dll
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\bin\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Dominio.pdb
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\obj\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.csproj.CopyComplete
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\obj\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.dll
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_Ciclo3.App.Persistencia\obj\Debug\netstandard2.1\Proyecto_Ciclo3.APP.Persistencia.pdb
