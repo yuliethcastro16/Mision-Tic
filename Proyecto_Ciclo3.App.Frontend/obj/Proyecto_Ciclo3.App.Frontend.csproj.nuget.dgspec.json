@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_ciclo3.APP.Frontend\\Proyecto_Ciclo3.App.Frontend.csproj": {}
+    "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.App.Frontend\\Proyecto_Ciclo3.App.Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_ciclo3.APP.Frontend\\Proyecto_Ciclo3.App.Frontend.csproj": {
+    "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.App.Frontend\\Proyecto_Ciclo3.App.Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_ciclo3.APP.Frontend\\Proyecto_Ciclo3.App.Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.App.Frontend\\Proyecto_Ciclo3.App.Frontend.csproj",
         "projectName": "Proyecto_Ciclo3.App.Frontend",
-        "projectPath": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_ciclo3.APP.Frontend\\Proyecto_Ciclo3.App.Frontend.csproj",
+        "projectPath": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.App.Frontend\\Proyecto_Ciclo3.App.Frontend.csproj",
         "packagesPath": "C:\\Users\\Catalina Castro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_ciclo3.APP.Frontend\\obj\\",
+        "outputPath": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.App.Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Catalina Castro\\AppData\\Roaming\\NuGet\\NuGet.Config"
