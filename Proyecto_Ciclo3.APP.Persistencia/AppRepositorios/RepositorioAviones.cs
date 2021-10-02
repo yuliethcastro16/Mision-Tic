@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using ProyectoCiclo3.App.Dominio;
+using Proyecto_Ciclo3.App.Dominio;
 using System.Linq;
 using System;
  
@@ -7,26 +7,41 @@ namespace Proyecto_Ciclo3.App.Persistencia.AppRepositorios
 {
     public class RepositorioAviones
     {
-        List<Aviones> aviones;
+        List<Aviones> Aviones;
  
-    public RepositorioBAviones()
+    public RepositorioAviones()
         {
-            aviones= new List<Aviones>()
+            Aviones= new List<Aviones>()
             {
-                new Aviones{id=1,marca="Audi",modelo= 2020,kilometraje= 100000,numero_asientos= 4,placa= "POP678"},
-                new Aviones{id=2,marca="Toyota",modelo= 2021,kilometraje= 90000,numero_asientos= 16,placa= "OIU859"},
-                new Aviones{id=3,marca="Mazda",modelo= 2000,kilometraje= 150000,numero_asientos= 24,placa= "YUH859"}
+                new Aviones{id=1,marca="Audi",modelo="xxxx",numero_asientos= 100000,numero_baños= 4,max_peso= 23},
+                new Aviones{id=2,marca="Toyota",modelo="yyyyy",numero_asientos= 90000,numero_baños= 16,max_peso= 45},
+                new Aviones{id=3,marca="Mazda",modelo="nnnnn",numero_asientos= 150000,numero_baños= 24,max_peso= 34}
  
             };
         }
  
         public IEnumerable<Aviones> GetAll()
         {
-            return aviones;
+            return Aviones;
         }
  
         public Aviones GetAvionesWithId(int id){
-            return aviones.SingleOrDefault(b => b.id == id);
+            return Aviones.SingleOrDefault(b => b.id == id);
         }
+
+        public Aviones Update(Aviones newAvion){
+            var avion= Aviones.SingleOrDefault(b => b.id == newAvion.id);
+            if(avion != null){
+                avion.marca = newAvion.marca;
+                avion.modelo = newAvion.modelo;
+                avion.numero_asientos = newAvion.numero_asientos;
+                avion.numero_baños = newAvion.numero_baños;
+                avion.max_peso = newAvion.max_peso;
+            }
+        return avion;
+        }
+
+
+
     }
 }

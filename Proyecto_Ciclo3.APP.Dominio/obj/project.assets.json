@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.APP.Dominio\\Proyecto_Ciclo3.APP.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.App.Dominio\\Proyecto_Ciclo3.APP.Dominio.csproj",
       "projectName": "Proyecto_Ciclo3.APP.Dominio",
-      "projectPath": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.APP.Dominio\\Proyecto_Ciclo3.APP.Dominio.csproj",
+      "projectPath": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.App.Dominio\\Proyecto_Ciclo3.APP.Dominio.csproj",
       "packagesPath": "C:\\Users\\Catalina Castro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.APP.Dominio\\obj\\",
+      "outputPath": "C:\\Users\\Catalina Castro\\Desktop\\Proyecto_ciclo3.APP\\Proyecto_Ciclo3.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Catalina Castro\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -231,7 +231,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
       }
     }
   }

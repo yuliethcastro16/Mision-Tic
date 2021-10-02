@@ -1,0 +1,25 @@
+@page
+@model Proyecto_Ciclo3.App.Frontend.Pages.EditAvionModel
+@{
+    var avion = Model.Avion;
+}
+
+ 
+<div class="text-center">
+<form method="POST">
+  <label for="id" class="form-label">id:</label>
+  <input type="number" class="form-control" id="id" name="id" placeholder="id" asp-for="@avion.id">
+  <label for="marca" class="form-label">Marca:</label>
+  <input type="text" class="form-control" id="marca" name="marca" placeholder="marca" asp-for="@avion.marca">
+  <label for="modelo" class="form-label">Modelo:</label>
+  <input type="text" class="form-control" id="modelo" name="modelo" placeholder="modelo" asp-for="@avion.modelo">
+  <label for="numero_asientos" class="form-label">Numero Asientos:</label>
+  <input type="number" class="form-control" id="numero_asientos" name="numero_asientos" placeholder="numero_asientos" asp-for="@avion.numero_asientos">
+  <label for="numero_baños" class="form-label">Numero Baños:</label>
+  <input type="number" class="form-control" id="numero_baños" name="numero_baños" placeholder="numero_baños" asp-for="@avion.numero_baños">
+  <label for="max_peso" class="form-label">Capacidad Maxima de peso</label>
+  <input type="number" class="form-control" id="max_peso" name="max_peso" placeholder="max_peso" asp-for="@avion.max_peso"> 
+  <hr>
+  <button type="submit" class="btn btn-success">Enviar</button>
+</form>
+</div>
