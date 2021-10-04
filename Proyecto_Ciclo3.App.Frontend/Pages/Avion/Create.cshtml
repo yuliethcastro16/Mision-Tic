@@ -1,19 +1,24 @@
 @page
-@{
-}
+@model Proyecto_Ciclo3.App.Frontend.Pages.FormAvionModel
+
+
  
-<div class="text-center">
-<form action="">
+<div class="text-center" >
+<form method="POST">
+ 
+
   <label for="marca" class="form-label">Marca:</label>
-  <input type="text" class="form-control" id="marca" name="marca" placeholder="marca">
+  <input type="text" class="form-control" id="marca" name="marca" placeholder="marca" required minlength="3" >
   <label for="modelo" class="form-label">Modelo:</label>
-  <input type="text" class="form-control" id="modelo" name="modelo" placeholder="modelo">
+  <input type="text" class="form-control" id="modelo" name="modelo" placeholder="modelo" required >
   <label for="numero_asientos" class="form-label">Numero Asientos:</label>
-  <input type="number" class="form-control" id="numero_asientos" name="numero_asientos" placeholder="numero_asientos">
+  <input type="number" class="form-control" id="numero_asientos" name="numero_asientos" placeholder="numero_asientos" required>
+
   <label for="numero_baños" class="form-label">Numero Baños:</label>
-  <input type="number" class="form-control" id="numero_baños" name="numero_baños" placeholder="numero_baños">
+  <input type="number" class="form-control" id="numero_baños" name="numero_baños" placeholder="numero_baños" required>
   <label for="max_peso" class="form-label">Capacidad Maxima de peso</label>
-  <input type="number" class="form-control" id="max_peso" name="max_peso" placeholder="max_peso">
+  <input type="number" class="form-control" id="max_peso" name="max_peso" placeholder="max_peso" required > 
+
   <hr>
   <button type="submit" class="btn btn-success">Enviar</button>
 </form>
