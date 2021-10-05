@@ -9,34 +9,36 @@ using Proyecto_Ciclo3.App.Dominio;
  
 namespace Proyecto_Ciclo3.App.Frontend.Pages
 {
-    public class FormAeropuertoModel : PageModel
+    public class EditAeropuertoModel : PageModel
     {
        private readonly RepositorioAeropuertos repositorioAeropuertos;
               [BindProperty]
               public Aeropuertos Aeropuerto {get;set;}
-
-              
-
-      public FormAeropuertoModel(RepositorioAeropuertos repositorioAeropuertos)
+ 
+        public EditAeropuertoModel(RepositorioAeropuertos repositorioAeropuertos)
        {
             this.repositorioAeropuertos=repositorioAeropuertos;
        }
  
-       
+        public IActionResult OnGet(int AeropuertoId)
+        {
+                Aeropuerto=repositorioAeropuertos.GetAeropuertosWithId(AeropuertoId);
+                return Page();
+ 
+        }
         public IActionResult OnPost()
         {
             if(!ModelState.IsValid)
             {
                 return Page();
             }
-            
-            Aeropuerto = repositorioAeropuertos.Create(Aeropuerto);
+            if(Aeropuerto.id>0)
+            {
+            Aeropuerto = repositorioAeropuertos.Update(Aeropuerto);
+            }
             return RedirectToPage("./List");
         }
 
         
     }
 }
-
-
-
