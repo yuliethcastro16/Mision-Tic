@@ -89,3 +89,5 @@ C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_ciclo3.APP.Fronten
 C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_ciclo3.APP.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Avion\Details.cshtml.g.cs
 C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_ciclo3.APP.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Aeropuerto\Details.cshtml.g.cs
 C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_ciclo3.APP.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Aeropuerto\Edit.cshtml.g.cs
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_ciclo3.APP.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ruta\Details.cshtml.g.cs
+C:\Users\Catalina Castro\Desktop\Proyecto_ciclo3.APP\Proyecto_ciclo3.APP.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ruta\Edit.cshtml.g.cs

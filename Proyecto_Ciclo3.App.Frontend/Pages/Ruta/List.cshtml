@@ -1,34 +1,25 @@
 @page
+@model Proyecto_Ciclo3.App.Frontend.Pages.ListRutaModel
 @{
 }
  
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Twitter</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>Facebook</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry the Bird</td>
-      <td>Arias</td>
-      <td>Instagram</td>
-    </tr>
-  </tbody>
+<h1>Listado de Rutas</h1>
+<table class="table">
+    @foreach (var Ruta in Model.Rutas)
+    {
+        <tr>
+            <td>@Ruta.id</td>
+            <td>@Ruta.origen</td>
+            <td>@Ruta.destino</td>
+            <td>@Ruta.tiempo_estimado</td>
+             <td>
+              <a class="btn btn-info" asp-page="./Details" asp-route-RutaId="@Ruta.id">Ver</a>
+              <a class="btn btn-info" asp-page="./Edit" asp-route-RutaId="@Ruta.id">Editar</a>
+              <form method="POST">
+            <input type="number" class="d-none" id="id" name="id" placeholder="id" asp-for="@Ruta.id">
+              <button type="submit"class="btn btn-danger" href="">Eliminar</button>
+            </form>
+              </td>
+        </tr>
+    }
 </table>
