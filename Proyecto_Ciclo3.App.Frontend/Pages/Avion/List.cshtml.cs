@@ -30,7 +30,7 @@ namespace Proyecto_Ciclo3.App.Frontend.Pages
         {
             if(Avion.id>0)
             {
-                Avion = repositorioAviones.Delete(Avion.id);
+                repositorioAviones.Delete(Avion.id);
             }
             
             return RedirectToPage("./List");
