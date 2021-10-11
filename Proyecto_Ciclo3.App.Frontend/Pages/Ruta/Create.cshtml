@@ -8,11 +8,25 @@
  
 
   <label for="origen" class="form-label">Origen:</label>
-  <input type="text" class="form-control" id="origen" name="origen" placeholder="origen" required minlength="3" >
+   <select asp-for="Ruta.origen" class="form-control">
+        <option value="origen">Seleccione un aeropuerto</option>
+        @foreach (var aeropuerto in Model.Aeropuertos)
+    {
+        <option value="@aeropuerto.id">@aeropuerto.nombre @aeropuerto.ciudad</option>
+    }
+    </select>
+
   <label for="destino" class="form-label">Destino:</label>
-  <input type="text" class="form-control" id="destino" name="destino" placeholder="destino" required >
+  <select asp-for="Ruta.destino" class="form-control">
+        <option value="destino">Seleccione un aeropuerto</option>
+        @foreach (var aeropuerto in Model.Aeropuertos)
+    {
+        <option value="@aeropuerto.id">@aeropuerto.nombre @aeropuerto.ciudad</option>
+    }
+    </select>
+
   <label for="tiempo_estimado" class="form-label">Tiempo Estimado:</label>
-  <input type="String" class="form-control" id="tiempo_estimado" name="tiempo_estimado" placeholder="tiempo_estimado" required>
+  <input type="number" class="form-control" id="tiempo_estimado" name="tiempo_estimado" placeholder="tiempo_estimado" required>
 
   <hr>
   <button type="submit" class="btn btn-success">Enviar</button>

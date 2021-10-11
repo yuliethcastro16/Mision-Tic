@@ -12,6 +12,7 @@ namespace Proyecto_Ciclo3.App.Frontend.Pages
     public class ListRutaModel : PageModel
     {
         private readonly RepositorioRutas repositorioRutas;
+        
         public IEnumerable<Rutas> Rutas {get;set;}
         [BindProperty]
         public Rutas Ruta {get;set;}
