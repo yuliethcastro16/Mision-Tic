@@ -1,27 +1,28 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Proyecto_Ciclo3.App.Frontend</title>
+    <title>@ViewData["Title"] Aerolinea</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Proyecto Aerolinea</a>
+              <a href="/Index" class="navbar-left"><img src="https://www.lne.es/ideas/aviones/images/avion02.png" alt="" width="30" height="24" title="avion" asp-page="/Index" ></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
+                                                <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Avion/Create">Registrar Avión</a>
                         </li>
                         <li class="nav-item">
@@ -39,6 +40,27 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Ruta/List">Listar Rutas</a>
                         </li>
+                        @if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+    </li>
+    <li class="nav-item">
+        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
+            <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+        </form>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        
+        <a class=" nav-link text-dark "  id="register" asp-area="Identity" asp-page="/Account/Register">Registrarse</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark  " id="login" asp-area="Identity" asp-page="/Account/Login">Ingresar</a>
+    </li>
+}
                     </ul>
                 </div>
             </div>
