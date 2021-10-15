@@ -4,10 +4,19 @@
 }
  
 <h1>Listado de Rutas</h1>
-<table class="table">
+<table class="table table-bordered table-hover dataTable">
+  <tr role="row">
+        <th scope="col">Id</th>
+        <th scope="col">Origen</th>
+        <th scope="col">Destino</th>
+        <th scope="col">Tiempo Estimado</th>
+        
+      </tr>
     @foreach (var Ruta in Model.Rutas)
     {
-        <tr>
+     
+ 
+        <tr role="row">
             <td>@Ruta.id</td>
             <td>@Ruta.origen</td>
             <td>@Ruta.destino</td>
@@ -17,9 +26,10 @@
               <a class="btn btn-info" asp-page="./Edit" asp-route-RutaId="@Ruta.id">Editar</a>
               <form method="POST">
             <input type="number" class="d-none" id="id" name="id" placeholder="id" asp-for="@Ruta.id">
-              <button type="submit"class="btn btn-danger" href="">Eliminar</button>
+              <button type="submit"class="btn btn-danger" href="">Borrar</button>
             </form>
               </td>
         </tr>
+   
     }
 </table>

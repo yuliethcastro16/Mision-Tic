@@ -4,9 +4,18 @@
 }
  
 <h1>Listado de Aviones</h1>
-<table class="table">
+<table class="table table-bordered table-hover dataTable">
+  <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Modelo</th>
+        <th scope="col">Numero Asientos</th>
+        <th scope="col">Numero Baños</th>
+        <th scope="col">Peso Maximo</th>
+      </tr>
     @foreach (var Avion in Model.Aviones)
     {
+      
         <tr>
             <td>@Avion.id</td>
             <td>@Avion.marca</td>
@@ -19,7 +28,7 @@
               <a class="btn btn-info" asp-page="./Edit" asp-route-AvionId="@Avion.id">Editar</a>
               <form method="POST">
             <input type="number" class="d-none" id="id" name="id" placeholder="id" asp-for="@Avion.id">
-              <button type="submit"class="btn btn-danger" href="">Eliminar</button>
+              <button type="submit"class="btn btn-danger" href="">Borrar</button>
             </form>
               </td>
         </tr>

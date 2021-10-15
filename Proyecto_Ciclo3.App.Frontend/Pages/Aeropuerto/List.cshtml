@@ -4,9 +4,19 @@
 }
  
 <h1>Listado de Aeropuertos</h1>
-<table class="table">
+<table class="table table-bordered table-hover dataTable">
+  <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">País</th>
+        <th scope="col">Coord_x</th>
+        <th scope="col">Coord_y</th>
+      </tr>
     @foreach (var Aeropuerto in Model.Aeropuertos)
     {
+      
+
         <tr>
             <td>@Aeropuerto.id</td>
             <td>@Aeropuerto.nombre</td>
@@ -19,9 +29,9 @@
               <a class="btn btn-info" asp-page="./Edit" asp-route-aeropuertoId="@Aeropuerto.id">Editar</a>
               <form method="POST">
             <input type="number" class="d-none" id="id" name="id" placeholder="id" asp-for="@Aeropuerto.id">
-              <button type="submit"class="btn btn-danger" href="">Eliminar</button>
+              <button type="submit"class="btn btn-danger" href="">Borrar</button>
             </form>
-              </td>
+            </td>
         </tr>
     }
 </table>
